@@ -72,16 +72,17 @@ static const char *browser[]  = { "chromium", NULL };
 static const char *discord[]  = { "discord", NULL };
 static const char *dolphin[]  = { "thunar", NULL };
 static const char *spotify[]  = { "spotify", NULL };
+static const char *minecraft[]      = { "minecraft-launcher", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-    { MODKEY|ShiftMask,             XK_a,      spawn,          {.v = browser } },
-	{ MODKEY|ShiftMask,		        XK_d,      spawn,	       {.v = discord } },
-	{ MODKEY|ShiftMask,		        XK_e,      spawn,	       {.v = dolphin } },
-    { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } },
-
+	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } }, // reload dmenu
+	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } }, // terminal
+    { MODKEY|ShiftMask,             XK_a,      spawn,          {.v = browser } }, // chromium 
+	{ MODKEY|ShiftMask,		        XK_d,      spawn,	       {.v = discord } }, // discord
+	{ MODKEY|ShiftMask,		        XK_e,      spawn,	       {.v = dolphin } }, // file manager
+    { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } }, // spotify
+	{ MODKEY|ShiftMask,		XK_t,      spawn,	   {.v = minecraft } }, // minecraft launcher
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
