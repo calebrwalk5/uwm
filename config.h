@@ -63,6 +63,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "terminator", NULL };
 static const char *browser[]  = { "chromium", NULL };
 static const char *discord[]  = { "discord", NULL };
+static const char *dolphin[]  = { "dolphin", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -70,6 +71,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
     	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = browser } },
 	{ MODKEY|ShiftMask,		XK_d,      spawn,	   {.v = discord } },
+	{ MODKEY|ShiftMask,		XK_e,      spawn,	   {.v = dolphin } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
