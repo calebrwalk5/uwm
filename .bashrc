@@ -1,5 +1,11 @@
 # My custom ~/.bashrc config, add this to the end of your ~/.bashrc file
 
+alias cp="cp -i"                          # confirm before overwriting something
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+alias np='nano -w PKGBUILD'
+alias more=less
+
 cowsay -f tux I spend way too much time here
 
 # Command prompt colors
@@ -21,4 +27,4 @@ cyan='\[\033[0;36m\]'
 CYAN='\[\033[1;36m\]'
 NC='\[\033[0m\]'
 
-PS1="$yellow[$CYAN\u$yellow@$red\H$yellow][$GREEN\w$grey$yellow]$NC# "
+PS1="$yellow[$CYAN\u$yellow@$red\H$yellow$GREEN \w$grey$yellow]$NC$ "
