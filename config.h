@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
-/* helper for spawning shell commands in the pre dwm-5.0 fashion */
+/* helper for spawning shell commands in the pre uwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/usr/local/bin/terminator", "-c", cmd, NULL } }
 
 /* commands */
@@ -73,6 +73,7 @@ static const char *discord[]  = { "discord", NULL };
 static const char *dolphin[]  = { "thunar", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *minecraft[]      = { "minecraft-launcher", NULL };
+static const char *customize[] = { "kate uwm/config.h", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -83,6 +84,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		        XK_e,      spawn,	       {.v = dolphin } }, // file manager
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } }, // spotify
 	{ MODKEY|ShiftMask,		XK_t,      spawn,	   {.v = minecraft } }, // minecraft launcher
+	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   {.v = customize } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },

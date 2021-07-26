@@ -4,8 +4,9 @@ int main() {
 	system("feh --bg-scale ~/Pictures/wallpaper.png");
 	system("make");
 	system("sudo make clean install");
-	system("echo 'exec dwm' >> ~/.xinitrc");
-	system("sudo cp dwm.desktop /usr/share/xsessions/");
+	system("echo 'exec uwm' >> ~/.xinitrc");
+	system("sudo cp uwm.desktop /usr/share/xsessions/");
+	system("echo 'feh --bg-scale ~/Pictures/wallpaper.png' >> ~/.bashrc");
 	system("sudo chmod +x clock.sh");
 	return 0;
 }

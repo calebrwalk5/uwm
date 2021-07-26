@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=UWM
+Comment=Unintuitive window manager
+Exec=/usr/local/bin/uwm
+Icon=dwm
+Type=XSession
