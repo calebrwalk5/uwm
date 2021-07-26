@@ -11,7 +11,7 @@ How to install:
 gcc install.c -o install.o
 ./install.o
 
-Shortcuts:
+Open Programs:
 ALT + SHIFT + RETURN = Terminal
 ALT + SHIFT + A = Chromium
 ALT + SHIFT + S = Spotify
@@ -19,9 +19,13 @@ ALT + SHIFT + E = Thunar
 ALT + SHIFT + C = Close Focused Window
 ALT + SHIFT + D = Discord
 ALT + SHIFT + T = Minecraft Launcher
+
+Other Shortcuts:
 ALT + SHIFT + Q = Log Out
 ALT + SHIFT + > = Move Focused Window
 ALT + SHIFT + > = Move Focused Window
 ALT + < = Change Focused Window
 ALT + > = Change Focused Window
 ALT + TAB  = Change Workspace
+ALT + Right Click Drag = Resize Window
+ALT + Left Click Drag = Move Window
