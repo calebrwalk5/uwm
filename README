@@ -27,8 +27,8 @@ ALT + SHIFT + > = Move Focused Window
 ALT + < = Change Focused Window
 ALT + > = Change Focused Window
 ALT + TAB  = Change Workspace
-ALT + Right Click Drag = Resize Window
-ALT + Left Click Drag = Move Window
+ALT + Right Click Drag = Resize Window (must be in floating mode)
+ALT + Left Click Drag = Move Window (must be in floating mode)
 
 How to use my .bashrc:
 Paste the contents of my .bashrc file to the end of your ~/.bashrc
