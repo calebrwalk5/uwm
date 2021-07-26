@@ -73,7 +73,7 @@ static const char *discord[]  = { "discord", NULL };
 static const char *dolphin[]  = { "thunar", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *minecraft[]      = { "minecraft-launcher", NULL };
-static const char *customize[] = { "customconfig", NULL };
+static const char *custom[] = { "st vim ~/uwm/config.h", NULL };
 static const char *steam[] = { "steam", NULL };
 
 static Key keys[] = {
@@ -85,7 +85,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		        XK_e,      spawn,	       {.v = dolphin } }, // file manager
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } }, // spotify
 	{ MODKEY|ShiftMask,		XK_t,      spawn,	   {.v = minecraft } }, // minecraft launcher
-	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   {.v = customize } },
+	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   {.v = custom } },
 	{ MODKEY|ShiftMask,		XK_g,	   spawn,	   {.v = steam } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
