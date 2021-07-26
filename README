@@ -6,7 +6,16 @@ base-devel
 xorg
 terminator
 st
-vim
+
+Recommended packages:
+aerc
+minecraft-launcher
+spotify
+discord
+chromium
+thunar
+steam
+cowsay
 
 How to install:
 gcc install.c -o install.o
@@ -30,7 +39,7 @@ ALT + > = Change Focused Window
 ALT + TAB  = Change Workspace
 ALT + Right Click Drag = Resize Window (must be in floating mode)
 ALT + Left Click Drag = Move Window (must be in floating mode)
-ALT + SHIFT + Z = Customize config.h
+ALT + SHIFT + Z = Open Email Client (aerc)
 
 How to use my .bashrc:
 Paste the contents of my .bashrc file to the end of your ~/.bashrc
