@@ -6,6 +6,7 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 alias c='clear'
+alias customconfig='vim ~/uwm/config.h'
 cowsay -f tux I spend way too much time here
 
 # Command prompt colors
