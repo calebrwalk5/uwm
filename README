@@ -16,6 +16,7 @@ chromium
 thunar
 steam
 cowsay
+ranger
 
 How to install:
 gcc install.c -o install.o
@@ -25,10 +26,12 @@ Open Programs:
 ALT + SHIFT + RETURN = Terminal
 ALT + SHIFT + A = Chromium
 ALT + SHIFT + S = Spotify
-ALT + SHIFT + E = Thunar
+ALT + SHIFT + E = Thunar (GUI file manager)
+ALT + SHIFT + R = Ranger (terminal-based file manager)
 ALT + SHIFT + C = Close Focused Window
 ALT + SHIFT + D = Discord
 ALT + SHIFT + T = Minecraft Launcher
+ALT + SHIFT + Z = Open Email Client (aerc)
 
 Other Shortcuts:
 ALT + SHIFT + Q = Log Out
@@ -39,7 +42,6 @@ ALT + > = Change Focused Window
 ALT + TAB  = Change Workspace
 ALT + Right Click Drag = Resize Window (must be in floating mode)
 ALT + Left Click Drag = Move Window (must be in floating mode)
-ALT + SHIFT + Z = Open Email Client (aerc)
 
 How to use my .bashrc:
 Paste the contents of my .bashrc file to the end of your ~/.bashrc
