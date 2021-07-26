@@ -34,3 +34,8 @@ ALT + SHIFT + Z = Customize config.h
 
 How to use my .bashrc:
 Paste the contents of my .bashrc file to the end of your ~/.bashrc
+
+How to customize UWM:
+1. Modify any file you like, in any way you like
+2. sudo make install
+3. kill -9 -1
