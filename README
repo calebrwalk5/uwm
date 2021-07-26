@@ -29,3 +29,6 @@ ALT + > = Change Focused Window
 ALT + TAB  = Change Workspace
 ALT + Right Click Drag = Resize Window
 ALT + Left Click Drag = Move Window
+
+How to use my .bashrc:
+Paste the contents of my .bashrc file to the end of your ~/.bashrc
