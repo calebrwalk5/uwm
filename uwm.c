@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details.
  *
- * dynamic window manager is designed like any other X client as well. It is
+ * unintuitive window manager is designed like any other X client as well. It is
  * driven through handling X events. In contrast to other X clients, a window
  * manager selects for SubstructureRedirectMask on the root window, to receive
  * events about window (dis-)appearance. Only one X connection at a time is
@@ -2131,7 +2131,7 @@ int
 main(int argc, char *argv[])
 {
 	if (argc == 2 && !strcmp("-v", argv[1]))
-		die("uwm-"VERSION);
+		die("UWM-"VERSION);
 	else if (argc != 1)
 		die("usage: uwm [-v]");
 	if (!setlocale(LC_CTYPE, "") || !XSupportsLocale())

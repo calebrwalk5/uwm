@@ -2,7 +2,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -74,6 +74,7 @@ static const char *dolphin[]  = { "thunar", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *minecraft[]      = { "minecraft-launcher", NULL };
 static const char *customize[] = { "kate uwm/config.h", NULL };
+static const char *steam[] = { "steam", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -85,6 +86,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } }, // spotify
 	{ MODKEY|ShiftMask,		XK_t,      spawn,	   {.v = minecraft } }, // minecraft launcher
 	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   {.v = customize } },
+	{ MODKEY|ShiftMask,		XK_g,	   spawn,	   {.v = steam } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
