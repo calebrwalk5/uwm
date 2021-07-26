@@ -73,7 +73,7 @@ static const char *discord[]  = { "discord", NULL };
 static const char *dolphin[]  = { "thunar", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *minecraft[]      = { "minecraft-launcher", NULL };
-static const char *customize[] = { "kate uwm/config.h", NULL };
+static const char *customize[] = { "customconfig", NULL };
 static const char *steam[] = { "steam", NULL };
 
 static Key keys[] = {
