@@ -1,8 +1,8 @@
 #include <X11/XF86keysym.h>
-/* See LICENSE file for copyright and license details. */
+/* unintuitive window manager config file */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -48,9 +48,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "既定",      tile },    /* first entry is default */
-	{ "浮く",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "tegla",      tile },    /* first entry is default */
+	{ "floti",      NULL },    /* no layout function means floating behavior */
+	{ "(╭ರ_⊙ )",      monocle },
 };
 
 /* key definitions */
