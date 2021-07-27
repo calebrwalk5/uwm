@@ -16,7 +16,7 @@ chromium
 thunar
 steam
 cowsay
-ranger
+redshiftgui
 
 How to install:
 gcc install.c -o install.o
@@ -32,6 +32,7 @@ ALT + SHIFT + C = Close Focused Window
 ALT + SHIFT + D = Discord
 ALT + SHIFT + T = Minecraft Launcher
 ALT + SHIFT + Z = Open Email Client (aerc)
+ALT + SHIFT + R = Blue Light Filter (redshift)
 
 Other Shortcuts:
 ALT + SHIFT + Q = Log Out
