@@ -1,6 +1,9 @@
 #include <X11/XF86keysym.h>
 /* unintuitive window manager config file */
 
+#define TERMINAL "terminator"
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/bash", "-c", cmd, NULL } }
+
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -73,9 +76,8 @@ static const char *discord[]  = { "discord", NULL };
 static const char *dolphin[]  = { "thunar", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *minecraft[]      = { "minecraft-launcher", NULL };
-static const char *email[] = { "aerc", NULL };
 static const char *steam[] = { "steam", NULL };
-static const char *ranger[] = { "ranger", NULL };
+static const char *bluelight[] = { "redshiftgui", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -86,9 +88,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		        XK_e,      spawn,	       {.v = dolphin } }, // file manager
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } }, // spotify
 	{ MODKEY|ShiftMask,		XK_t,      spawn,	   {.v = minecraft } }, // minecraft launcher
-	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   {.v = email } },
+	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   SHCMD(TERMINAL "aerc") },
 	{ MODKEY|ShiftMask,		XK_g,	   spawn,	   {.v = steam } },
-	{ MODKEY|ShiftMask,		XK_r,	   spawn,	   {.v = ranger } },
+	{ MODKEY|ShiftMask,		XK_r,	   spawn,	   {.v = bluelight } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
