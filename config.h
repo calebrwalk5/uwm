@@ -71,7 +71,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normbordercolor, "-sb", normfgcolor, "-sf", selbordercolor, NULL };
 static const char *termcmd[]  = { "terminator", NULL };
-static const char *browser[]  = { "chromium", NULL };
+static const char *browser[]  = { "firefox", NULL };
 static const char *discord[]  = { "discord", NULL };
 static const char *dolphin[]  = { "thunar", NULL };
 static const char *spotify[]  = { "spotify", NULL };
@@ -83,14 +83,13 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } }, // reload dmenu
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } }, // terminal
-    { MODKEY|ShiftMask,             XK_a,      spawn,          {.v = browser } }, // chromium 
-	{ MODKEY|ShiftMask,		        XK_d,      spawn,	       {.v = discord } }, // discord
-	{ MODKEY|ShiftMask,		        XK_e,      spawn,	       {.v = dolphin } }, // file manager
-    { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } }, // spotify
+    	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = browser } }, // browser 
+	{ MODKEY|ShiftMask,		XK_d,      spawn,	   {.v = discord } }, // discord
+	{ MODKEY|ShiftMask,		XK_e,      spawn,	   {.v = dolphin } }, // file manager
+    	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } }, // spotify
 	{ MODKEY|ShiftMask,		XK_t,      spawn,	   {.v = minecraft } }, // minecraft launcher
-	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   SHCMD(TERMINAL "aerc") },
-	{ MODKEY|ShiftMask,		XK_g,	   spawn,	   {.v = steam } },
-	{ MODKEY|ShiftMask,		XK_r,	   spawn,	   {.v = bluelight } },
+	{ MODKEY|ShiftMask,		XK_g,	   spawn,	   {.v = steam } }, // steam
+	{ MODKEY|ShiftMask,		XK_r,	   spawn,	   {.v = bluelight } }, // blue light filter
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
