@@ -12,7 +12,7 @@ aerc
 minecraft-launcher
 spotify
 discord
-chromium
+firefox
 thunar
 steam
 cowsay
@@ -24,7 +24,7 @@ gcc install.c -o install.o
 
 Open Programs:
 ALT + SHIFT + RETURN = Terminal
-ALT + SHIFT + A = Chromium
+ALT + SHIFT + A = Firefox
 ALT + SHIFT + S = Spotify
 ALT + SHIFT + E = Thunar (GUI file manager)
 ALT + SHIFT + R = Ranger (terminal-based file manager)
