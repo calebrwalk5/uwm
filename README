@@ -16,7 +16,8 @@ firefox
 thunar
 steam
 cowsay
-redshiftgui
+lutris
+openrgb
 
 How to install:
 gcc install.c -o install.o
@@ -27,12 +28,13 @@ ALT + SHIFT + RETURN = Terminal
 ALT + SHIFT + A = Firefox
 ALT + SHIFT + S = Spotify
 ALT + SHIFT + E = Thunar (GUI file manager)
-ALT + SHIFT + R = Ranger (terminal-based file manager)
 ALT + SHIFT + C = Close Focused Window
 ALT + SHIFT + D = Discord
 ALT + SHIFT + T = Minecraft Launcher
-ALT + SHIFT + Z = Open Email Client (aerc)
-ALT + SHIFT + R = Blue Light Filter (redshift)
+ALT + SHIFT + L = Lutris
+ALT + SHIFT + R = Customize RGB (openrgb)
+ALT + SHIFT + W = Tor Browser 
+ALT + SHIFT + G = Steam
 
 Other Shortcuts:
 ALT + SHIFT + Q = Log Out
