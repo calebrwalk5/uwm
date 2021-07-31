@@ -51,8 +51,8 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "|tegla|",      tile },    /* first entry is default */
-	{ "<floti>",      NULL },    /* no layout function means floating behavior */
+	{ "|kahelo|",      tile },    /* first entry is default */
+	{ "<flosi>",      NULL },    /* no layout function means floating behavior */
 	{ "(╭ರ_⊙ )",      monocle },
 };
 
@@ -77,7 +77,9 @@ static const char *dolphin[]  = { "thunar", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *minecraft[]      = { "minecraft-launcher", NULL };
 static const char *steam[] = { "steam", NULL };
-static const char *bluelight[] = { "redshiftgui", NULL };
+static const char *rgb[] = { "openrgb", NULL };
+static const char *lutris[] =   { "lutris", NULL } ;
+static const char *tor[] =	{ "tor-browser", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -89,8 +91,10 @@ static Key keys[] = {
     	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = spotify } }, // spotify
 	{ MODKEY|ShiftMask,		XK_t,      spawn,	   {.v = minecraft } }, // minecraft launcher
 	{ MODKEY|ShiftMask,		XK_g,	   spawn,	   {.v = steam } }, // steam
-	{ MODKEY|ShiftMask,		XK_r,	   spawn,	   {.v = bluelight } }, // blue light filter
-	{ MODKEY,                       XK_b,      togglebar,      {0} },
+	{ MODKEY|ShiftMask,		XK_r,	   spawn,	   {.v = rgb } }, // openrgb
+	{ MODKEY,                       XK_b,      togglebar,      {0} }, // toggle top bar
+	{ MODKEY|ShiftMask,		XK_l,      spawn,	   {.v = lutris } }, // lutris
+	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   {.v = tor } }, // tor browser
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
