@@ -5,6 +5,7 @@ gcc
 base-devel
 xorg
 terminator
+acpi
 st
 
 Recommended packages:
