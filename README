@@ -4,7 +4,6 @@ make
 gcc
 base-devel
 xorg
-terminator
 acpi
 st
 
@@ -19,6 +18,7 @@ steam
 cowsay
 lutris
 openrgb
+xterm
 
 How to install:
 gcc install.c -o install.o
