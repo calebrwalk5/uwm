@@ -51,9 +51,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "|kahelo|",      tile },    /* first entry is default */
-	{ "<flosi>",      NULL },    /* no layout function means floating behavior */
-	{ "(╭ರ_⊙ )",      monocle },
+	{ "|kahelo|",      tile },	   // Tiled
+	{ "<flosi>",      NULL },	  // Floating
+	{ "(╭ರ_⊙ )",      monocle },	// Monocle
 };
 
 /* key definitions */
@@ -133,7 +133,7 @@ static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
-	{ ClkLtSymbol,		0,		Button3,	setlayout,	{.v = &layouts[3]} },
+	{ ClkLtSymbol,		0,		Button2,	setlayout,	{.v = &layouts[1]} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
