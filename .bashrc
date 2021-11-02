@@ -7,9 +7,8 @@ alias np='nano -w PKGBUILD'
 alias more=less
 alias c='clear'
 alias customconfig='vim ~/uwm/config.h'
-cowsay -f tux I spend way too much time here
 
-# Command prompt colors
+# Command line colors
 
 grey='\[\033[1;30m\]'
 red='\[\033[0;31m\]'
