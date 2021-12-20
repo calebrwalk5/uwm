@@ -1,10 +1,11 @@
 #!/bin/sh
 
-cowsay -f tux uwm status script
+echo "uwm status script"
 
 status () {
-	echo -n "$(date '+%Y-%m-%d %H:%M') "
-	echo -n "Battery: $(acpi | awk '{print $4}' | sed s/,//)"
+	echo -n "$(date '+%Y-%m-%d | %H:%M') | "
+	echo -n "Battery: $(acpi | awk '{print $4}' | sed s/,//) | "
+	echo -n "RAM $(free -m | grep '^Mem' | awk '{print "used: " $3"MB"}')"
 }
 
 while :; do
@@ -13,4 +14,3 @@ while :; do
 	sleep 1
 
 done
-
