@@ -1,7 +1,7 @@
 #include <X11/XF86keysym.h>
 /* unintuitive window manager config file */
 
-#define TERMINAL "anus-term"
+#define TERMINAL "st"
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/bash", "-c", cmd, NULL } }
 
 /* appearance */
