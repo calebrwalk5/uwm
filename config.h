@@ -16,12 +16,12 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static char normbgcolor[]           = "#002b36";
+static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#fdf6e3";
-static char selfgcolor[]            = "#fdf6e3";
-static char selbordercolor[]        = "#fdf6e3";
-static char selbgcolor[]            = "#505050";
+static char normfgcolor[]           = "#f59542";
+static char selfgcolor[]            = "#eeeeee";
+static char selbordercolor[]        = "#f59542";
+static char selbgcolor[]            = "#444444";
 
 static char *colors[][3] = {
        /*               fg           bg           border   */
@@ -30,7 +30,7 @@ static char *colors[][3] = {
 };
 
 /* tagging */
-static const char *tags[] = { "α", "β", "γ", "δ"};
+static const char *tags[] = { "0x1", "0x2", "0x3", "0x4", "0x5", "0x6"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -40,7 +40,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "discord",  NULL,       NULL,       1 << 2,	    0,		 -1 },
+	{ "discord",  NULL,       NULL,       1 << 2,	    0,		 -1 }
 };
 
 /* layout(s) */
@@ -51,14 +51,14 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "|tiled|",      tile },	   // ALT + T
-	{ "<floating>",      NULL },	  // ALT + F
+	{ "=|tegula|=",      tile },	   // ALT + T
+	{ "=<fluitanis>=",      NULL },	  // ALT + F
 	{ "(╭ರ_⊙ )",      monocle },	// ALT + M
 };
 
 /* key definitions */
 #define MODKEY Mod1Mask
-#define TAGKEYS(KEY,TAG) \
+#define TAGKEYS(KEY,TAG) \	
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
@@ -71,13 +71,13 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normbordercolor, "-sb", normfgcolor, "-sf", selbordercolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *browser[]  = { "firefox", NULL };
+static const char *browser[]  = { "firefox-bin", NULL };
 static const char *discord[]  = { "discord", NULL };
-static const char *dolphin[]  = { "thunar", NULL };
+static const char *dolphin[]  = { "pcmanfm-qt", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *minecraft[]      = { "minecraft-launcher", NULL };
 static const char *steam[] = { "steam", NULL };
-static const char *rgb[] = { "openrgb", NULL };
+static const char *rgb[] = { "terminator", NULL };
 static const char *lutris[] =   { "lutris", NULL } ;
 static const char *tor[] =	{ "tor-browser", NULL };
 
@@ -124,7 +124,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} }
 };
 
 /* button definitions */
